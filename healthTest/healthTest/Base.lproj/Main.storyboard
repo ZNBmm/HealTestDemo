@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBo-OL-6dZ">
+                                <rect key="frame" x="156" y="530" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="写入步数"/>
+                                <connections>
+                                    <action selector="writeStepcount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JHv-EC-kco"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4r-z1-uoI">
+                                <rect key="frame" x="182" y="323" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="步数:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZ7-aQ-Aeb">
+                                <rect key="frame" x="122" y="323" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始时间:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYs-Ix-HD8">
+                                <rect key="frame" x="88" y="374" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7o-kt-tDC">
+                                <rect key="frame" x="182" y="374" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结束时间:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQI-2y-Ru3">
+                                <rect key="frame" x="88" y="415" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结束时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mB6-7N-cxm">
+                                <rect key="frame" x="182" y="415" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="填写步数" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eh-Po-N7Y">
+                                <rect key="frame" x="148.5" y="263" width="78.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="填写步数:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lb-EL-MFY">
+                                <rect key="frame" x="54.5" y="268" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aZ7-aQ-Aeb" firstAttribute="centerY" secondItem="M4r-z1-uoI" secondAttribute="centerY" id="88X-FT-vyE"/>
+                            <constraint firstItem="jQI-2y-Ru3" firstAttribute="trailing" secondItem="fYs-Ix-HD8" secondAttribute="trailing" id="CFb-cr-ZQL"/>
+                            <constraint firstItem="c7o-kt-tDC" firstAttribute="leading" secondItem="M4r-z1-uoI" secondAttribute="leading" id="F6Z-Jb-cYb"/>
+                            <constraint firstItem="M4r-z1-uoI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FU6-nn-xRA"/>
+                            <constraint firstItem="aZ7-aQ-Aeb" firstAttribute="top" secondItem="3eh-Po-N7Y" secondAttribute="bottom" constant="30" id="HFE-lX-8bk"/>
+                            <constraint firstItem="M4r-z1-uoI" firstAttribute="leading" secondItem="aZ7-aQ-Aeb" secondAttribute="trailing" constant="20" id="HXB-6h-XNH"/>
+                            <constraint firstItem="c7o-kt-tDC" firstAttribute="leading" secondItem="fYs-Ix-HD8" secondAttribute="trailing" constant="20" id="HjP-vJ-YbH"/>
+                            <constraint firstItem="3eh-Po-N7Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JMF-cb-rBC"/>
+                            <constraint firstItem="fYs-Ix-HD8" firstAttribute="centerY" secondItem="c7o-kt-tDC" secondAttribute="centerY" id="MU2-xS-6bn"/>
+                            <constraint firstItem="6Lb-EL-MFY" firstAttribute="centerY" secondItem="3eh-Po-N7Y" secondAttribute="centerY" id="QKb-VH-2Z1"/>
+                            <constraint firstItem="M4r-z1-uoI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cMT-vH-t3u"/>
+                            <constraint firstItem="mB6-7N-cxm" firstAttribute="centerY" secondItem="jQI-2y-Ru3" secondAttribute="centerY" id="d2r-Wr-qIp"/>
+                            <constraint firstItem="jQI-2y-Ru3" firstAttribute="top" secondItem="fYs-Ix-HD8" secondAttribute="bottom" constant="20" id="jP1-hw-B7b"/>
+                            <constraint firstItem="c7o-kt-tDC" firstAttribute="top" secondItem="M4r-z1-uoI" secondAttribute="bottom" constant="30" id="k4P-X1-GKN"/>
+                            <constraint firstItem="mB6-7N-cxm" firstAttribute="leading" secondItem="jQI-2y-Ru3" secondAttribute="trailing" constant="20" id="lZG-Sg-kdY"/>
+                            <constraint firstItem="3eh-Po-N7Y" firstAttribute="leading" secondItem="6Lb-EL-MFY" secondAttribute="trailing" constant="20" id="wUB-YK-JE8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="endTime" destination="mB6-7N-cxm" id="w1o-cK-po3"/>
+                        <outlet property="startTime" destination="c7o-kt-tDC" id="O3F-Zm-O7k"/>
+                        <outlet property="stepCount" destination="M4r-z1-uoI" id="DVR-Do-hXb"/>
+                        <outlet property="textF" destination="3eh-Po-N7Y" id="DrU-t7-kit"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
